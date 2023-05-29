@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import dinheiro from "../assets/dinheiro.jpg"
-import { Link } from "react-router-dom";
 import ModalCriaUsuario from '../components/Modais/ModalCriaUsuario/ModalCriaUsuario';
 
 const Sorteio = () => {
