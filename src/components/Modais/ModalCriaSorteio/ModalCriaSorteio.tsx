@@ -21,7 +21,7 @@ const ModalCriaSorteio: React.FC<ModalCriaSorteioProps> = ({ isOpen, setClose })
               </div>
               <div className="modal-body justify-content-center">
 
-              <div className="modal-body">
+            
                 <div className="container">
                     <form method="POST">
                 
@@ -51,7 +51,7 @@ const ModalCriaSorteio: React.FC<ModalCriaSorteioProps> = ({ isOpen, setClose })
                                 <input className="form-control" type="file" id="foto"  name="image_sorteio"/>
                             </div>
                             <div className="text-center mt-3">
-                                <input className="form-check-input" type="checkbox" value="True" id="status" name="status" checked/>
+                                <input className="form-check-input" type="checkbox" id="status"/>
                                 <label className="form-check-label" htmlFor="sorteio_ativo">
                                     Sorteio ativo
                                 </label>
@@ -59,11 +59,10 @@ const ModalCriaSorteio: React.FC<ModalCriaSorteioProps> = ({ isOpen, setClose })
                         </div>
                 
                         <div className="text-center mt-3">
-                        <button type="submit" className="btn btn-primary">Cadastrar</button>
+                          <button type="submit" className="btn btn-primary">Cadastrar</button>
                         </div>
                     </form>
                 </div>
-            </div>
               </div>
               <div className="modal-footer d-flex justify-content-center">
 

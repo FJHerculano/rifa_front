@@ -1,8 +1,7 @@
-import React from 'react'
 
 const ErrorPage = () => {
   return (
-    <div>Essa pagina não existe</div>
+    <div><h1>Error page</h1></div>
   )
 }
 

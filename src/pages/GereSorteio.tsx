@@ -159,7 +159,7 @@ const GereSorteio = () => {
                     </div>    
                     <div>    
                         <div className="text-center">
-                            <textarea className="form-control my-2" disabled>Descrição</textarea>
+                            <textarea className="form-control my-2" defaultValue="Descrição"/>
                         </div>
                     </div>
         
