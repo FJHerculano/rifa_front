@@ -23,14 +23,21 @@ const GereSorteio = () => {
         
                 <div className="col-12 d-flex justify-content-center p-2">
                     <button 
+                        data-bs-backdrop="static"
                         className='btn btn-sm btn-success m-1'
-                        data-bs-toggle="modal"
                         onClick={() => setOpenModalCriaSorteio(true)} 
                         // href="#criar_rifa"
                         role="button"
                     >
                         Adicionar uma nova rifa +
                     </button>
+                   
+                    <ModalCriaSorteio
+                        isOpen={openModalCriaSorteio} 
+                        setClose={() => setOpenModalCriaSorteio(!openModalCriaSorteio)}
+                    />
+
+
                 </div>
             </div>
         
@@ -39,14 +46,20 @@ const GereSorteio = () => {
                 <div className="col-12 d-flex justify-content-center">
                     <h5 className="text-center py-1">nome</h5>
                     <button 
+                        data-bs-backdrop="static"
                         className="btn btn-sm btn-warning m-1 fw-bold"
-                        data-bs-toggle="modal"
                         onClick={() => setOpenModalEditaSorteio(true)} 
                         // href="#editar_rifa"
                         role="button"
                     >
                         editar rifa
                     </button>
+
+                    <ModalEditaSorteio
+                        isOpen={openModalEditaSorteio} 
+                        setClose={() => setOpenModalEditaSorteio(!openModalEditaSorteio)}
+                    />
+
                 </div>
         
                 <div className="m-1 col-lg-5 col-md-12 col-sm-12 border border-2 border-primary rounded bg-white shadow">
@@ -71,14 +84,20 @@ const GereSorteio = () => {
                             <div>
                                 <div className="text-center">
                                     <button 
+                                        data-bs-backdrop="static"
                                         className="btn btn-sm btn-success m-1"
-                                        data-bs-toggle="modal"
                                         onClick={() => setOpenModalCriaPremio(true)} 
                                         //href="#criar_premios"
                                         role="button"
                                     >
                                         Adicionar prêmio +
                                     </button>
+                                    
+                                    <ModalCriaPremio
+                                        isOpen={openModalCriaPremio} 
+                                        setClose={() => setOpenModalCriaPremio(!openModalCriaPremio)}
+                                    />
+                                
                                 </div>
                             </div>
                         </div>
@@ -92,13 +111,19 @@ const GereSorteio = () => {
                         <div className="d-flex justify-content-center align-items-center mt-2">
                             <button 
                                 className="btn btn-sm btn-success m-1"
-                                data-bs-toggle="modal"
+                                data-bs-backdrop="static"
                                 onClick={() => setOpenModalCriaPromocao(true)} 
                                 //href="#criar_promocao"
                                 role="button"
                             >
                                 Adicionar promoções +
                             </button>
+                            
+                            <ModalCriaPromocao
+                                isOpen={openModalCriaPromocao} 
+                                setClose={() => setOpenModalCriaPromocao(!openModalCriaPromocao)}
+                            /> 
+
                         </div>
         
                         {/* <!-- Lista de promoções --> */}
@@ -175,24 +200,6 @@ const GereSorteio = () => {
         
         
         </section>
-      
-            <ModalCriaSorteio
-                isOpen={openModalCriaSorteio} 
-                setClose={() => setOpenModalCriaSorteio(!openModalCriaSorteio)}
-            />
-
-            <ModalCriaPremio
-                isOpen={openModalCriaPremio} 
-                setClose={() => setOpenModalCriaPremio(!openModalCriaPremio)}
-            />
-            <ModalCriaPromocao
-                isOpen={openModalCriaPromocao} 
-                setClose={() => setOpenModalCriaPromocao(!openModalCriaPromocao)}
-            /> 
-            <ModalEditaSorteio
-                isOpen={openModalEditaSorteio} 
-                setClose={() => setOpenModalEditaSorteio(!openModalEditaSorteio)}
-            />
 
         </div>
     )

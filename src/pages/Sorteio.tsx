@@ -79,12 +79,16 @@ const Sorteio = () => {
               <div className="text-center my-3">
                   <button 
                     className="btn btn-success btn-sm"
-                    data-bs-toggle="modal"
+                    data-bs-backdrop="static"
                     onClick={() => setOpenModalCriaUsuario(true)} 
                     role="button"
                   >
                     Comprar cotas +
                   </button>
+                  <ModalCriaUsuario
+                    isOpen={openModalCriaUsuario} 
+                    setClose={() => setOpenModalCriaUsuario(!openModalCriaUsuario)}
+                  />
               </div>
             </div>
           </div>
@@ -184,10 +188,7 @@ const Sorteio = () => {
         </div>
        
       </div>
-      <ModalCriaUsuario
-        isOpen={openModalCriaUsuario} 
-        setClose={() => setOpenModalCriaUsuario(!openModalCriaUsuario)}
-      />
+      
     </div>
 
     

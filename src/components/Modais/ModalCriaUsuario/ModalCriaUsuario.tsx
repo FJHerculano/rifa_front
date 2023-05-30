@@ -15,7 +15,7 @@ const ModalCriaUsuario: React.FC<ModalCriaUsuarioProps> = ({ isOpen, setClose })
                 role="document">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title">Editar imagens</h5>
+                <h5 className="modal-title">Seus dados</h5>
                 <button type="button" className="btn-close" data-dismiss="modal" aria-label="Close" onClick={setClose}>
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -28,12 +28,12 @@ const ModalCriaUsuario: React.FC<ModalCriaUsuarioProps> = ({ isOpen, setClose })
                       <div className="row d-flex">
 
                         <div className="col-12">
-                            <label htmlFor="" className="fw-bold">dados user</label>
+                            <label htmlFor="" className="fw-bold">Nome completo</label>
                             <input className="form-control" type="text" name="descricao_premio" id="descricao_premio"/>
                         </div>
                         <div className="col-12">
-                            <label htmlFor="" className="fw-bold">dados user</label>
-                            <input className="form-control" type="number" name="numero_premio" id="numero_premio/"/>
+                            <label htmlFor="" className="fw-bold">Numero de telefone</label>
+                            <input className="form-control" type="number" name="numero_premio" id="numero_premio/" placeholder="ex: (88) 99844-5555"/>
                         </div>
                          {/* <input type="hidden" name="sorteio_id" value="{{ sorteio.id }}"/> */}
                         <Link to="/cotasUser">

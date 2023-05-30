@@ -14,7 +14,7 @@ const ModalEditaSorteio: React.FC<ModalEditaSorteioProps> = ({ isOpen, setClose 
                 role="document">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title">Editar imagens</h5>
+                <h5 className="modal-title">Editando rifa (ID)</h5>
                 <button type="button" className="btn-close" data-dismiss="modal" aria-label="Close" onClick={setClose}>
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -51,7 +51,7 @@ const ModalEditaSorteio: React.FC<ModalEditaSorteioProps> = ({ isOpen, setClose 
                                 <input className="form-control" type="file" id="foto"  name="image_sorteio"/>
                             </div>
                             <div className="text-center mt-3">
-                                <input className="form-check-input" type="checkbox" value="True" id="status" name="status" checked/>
+                                <input className="form-check-input" type="checkbox" id="status" name="status" />
                                 <label className="form-check-label" htmlFor="sorteio_ativo">
                                     Sorteio ativo
                                 </label>

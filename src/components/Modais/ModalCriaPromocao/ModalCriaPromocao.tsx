@@ -14,7 +14,7 @@ const ModalCriaPromocao: React.FC<ModalCriaPromocaoProps> = ({ isOpen, setClose 
                 role="document">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title">Editar imagens</h5>
+                <h5 className="modal-title">Criando promoção</h5>
                 <button type="button" className="btn-close" data-dismiss="modal" aria-label="Close" onClick={setClose}>
                   <span aria-hidden="true">&times;</span>
                 </button>
